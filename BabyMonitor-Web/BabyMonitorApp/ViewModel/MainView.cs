@@ -33,10 +33,10 @@ namespace BabyMonitorApp.ViewModel
         {
             //CurrentTemperature = IoTPiHelper.GetInstance().GetTemperature();
 
-            await IoTHubConnector.GetInstance().SendDataToAzure(new Model.RealTimeUnit() { DeviceID = "1", SensorName = "Temperature", SensorValue = CurrentTemperature, Timestamp = DateTime.Now });
+            await IoTHubConnector.GetInstance().SendDataToAzure(new Model.RealTimeUnit() { DeviceID = "1", SensorName = "AmbientTemperature", SensorValue = CurrentTemperature, Timestamp = DateTime.Now });
 
             //CurrentHumidity = IoTPiHelper.GetInstance().GetHumidity();
-            await IoTHubConnector.GetInstance().SendDataToAzure(new Model.RealTimeUnit() { DeviceID = "1", SensorName = "Humidity", SensorValue = CurrentHumidity, Timestamp = DateTime.Now });
+            await IoTHubConnector.GetInstance().SendDataToAzure(new Model.RealTimeUnit() { DeviceID = "1", SensorName = "AmbientHumidity", SensorValue = CurrentHumidity, Timestamp = DateTime.Now });
         }
 
         private BaseCommand testSend;

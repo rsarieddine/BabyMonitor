@@ -101,6 +101,7 @@
     <Compile Include="Helpers\BaseCommand.cs" />
     <Compile Include="Helpers\IoTHubConnector.cs" />
     <Compile Include="Helpers\IoTPiHelper.cs" />
+    <Compile Include="Helpers\MediaStreamHelper.cs" />
     <Compile Include="Helpers\NotifyChangeBase.cs" />
     <Compile Include="Model\RealTimeUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
